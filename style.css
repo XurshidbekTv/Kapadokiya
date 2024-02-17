@@ -1,0 +1,33 @@
+   /* header */
+   .header__nav{
+        height: 600px;
+        margin-top: 60px;
+        background: url(img/header-bg.png);
+        background-position:center;
+        position: relative;
+        display: flex;
+    }
+    .header__nav::after{
+        position:absolute;
+        content:'';
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0%;
+        background:#24282C;
+        opacity: 40%;
+    }
+  /* header end */
+  .margin__top{
+    margin-top:  86px;
+  }
+  .margin-bottom{   
+    margin-bottom: 136px;
+  }
+  .carousel{
+    min-height: 500px;
+  }
+.container-fluid{
+  margin-left: 0!important;
+}
