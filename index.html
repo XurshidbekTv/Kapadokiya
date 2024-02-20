@@ -7,80 +7,35 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="fonts.css">
   
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar fixed-top bg-light ">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="img-fluid" src="img/Link → logo.png.png" alt="link logo">
+  <!-- navbar -->
+  <nav class="navbar navbar-nav fixed-top pt-5">
+    <div class="container ">
+     <div class="col-6 d-flex justify-content-around">
+      <a class="fw-bold d-none d-sm-flex icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">Маршрут
+        <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
       </a>
+      <a class="fw-bold d-none d-sm-flex icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">Отель
+        <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+      </a>
+      <a class="fw-bold d-none d-sm-flex icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">Стоимость
+        <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+      </a>
+     </div>
+     <form action="#">
 
-      <div class="d-none d-md-flex">
-        <div class="dropdown">
-          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Maxsulotlar
-          </a>
-        
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-
-        <div class="dropdown">
-          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Yechimlar
-          </a>
-        
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-
-        <div class="dropdown">
-          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Qo'lab-quvatlash
-          </a>
-        
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-
-        <div class="dropdown">
-          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Batafsil
-          </a>
-        
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="icon fs-5 align-items-center d-none d-md-flex gap-3">
-        <i class="fa-solid fa-earth-americas"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-
-      <button class="navbar-toggler d-md-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <label class="fw-bold text-primary d-sm-flex d-none" for="tell">+998(90)2922196</label>
+     </form>
+      <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            <img class="img-fluid" src="img/Link → logo.png.png" alt="link logo">
-          </h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -111,305 +66,261 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> 
+    <div class="navbar-text row d-flex fl">
+     <div class="col-11 d-flex justify-content-center">Cappadocia</div>
+      <div class="col-11 d-flex justify-content-center"><em>Эксклюзивный тур</em></div>
+     </div>
   </nav>
-  <!-- Navbar end -->
-  <!-- header -->
- <header class="header__nav">
-  <div class="header__text text-center d-flex justify-content-center w-100  align-items-center">
-    <h1 class="display-3 fw-bold text-light z-3">Xizmatlar va mahsulotlar</h1>
-  </div>
- </header>
- <!-- header end -->
-  <!-- section -->
-  <section class="section">
-    <div class="container">
-      <div class="row d-flex justify-content-center gx-5">
-        <div class="col-12 w-100 display-6 fw-bold d-flex justify-content-around mt-5">
-          Yer kadastri
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Mortgage.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Ko'chmas 
-            mulkni shakllantirish</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Map Marker.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Kadastr indeksi 
-            xaritalarini ishlab chiqarish</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Land Surveying.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Geodeziya
-            va xaritalash</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Address.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Kommunal 
-            xizmatlar xaritasi</h4>
-        </div>
-      </div>
-      <!-- Ikkinchi qator -->
-      <div class="row d-flex justify-content-center margin__top gx-5">
-        <div class="col-12 w-100 display-6 fw-bold d-flex justify-content-around mt-5">
-          Qishloq xo'jaligi
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Tree Planting.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Hosildorlik 
-            dinamikasi monitoringi</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Map.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Ekin turlarini tasniflash 
-            xaritasini ishlab chiqish</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Soil.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Tuproq 
-            holatini baholash</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Web Analytics.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Hosildorlikni 
-            bashorat qilish</h4>
-        </div>
-      </div>
-      <!-- Uchinchi qator -->
-      <div class="row d-flex justify-content-center margin__top gx-5">
-        <div class="col-12 w-100 display-6 fw-bold d-flex justify-content-around mt-5">
-          Suv resurslarini boshqarish
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Flood Car.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Suv toshqini xaritasini 
-            tuzish va monitoringi</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Europe.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Gidrologik 
-            modellashtirish</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/System Task.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Qurg'oqchilik 
-            monitoringi</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Flow.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Suvning ifloslanishini 
-            nazorat qilish</h4>
-        </div>
-      </div>
-      <!-- To'rtinchi qator -->
-      <div class="row d-flex justify-content-center margin__top gx-5">
-        <div class="col-12 w-100 display-6 fw-bold d-flex justify-content-around mt-5">
-          Ekologiya va atrof-muhit
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Flood Car.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">O'rmon 
-            xo'jaligi</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Europe.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Atmosferaning
-            ifloslanishi monitoringi</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/System Task.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Ifloslanish 
-            monitoringi: poligonlar</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Flow.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Iqlim o'zgarishi 
-            ta'siri monitoringi</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Flood Car.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Vegetatsiya 
-            dinamikasi</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Europe.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">O‘simlik va hayvonot 
-            dunyosini kuzatish va xaritalash</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/System Task.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">AIga asoslangan boshqaruv paneli 
-            yordamida ma'lumotlarni boshqarish</h4>
-        </div>
-      </div>
-      <!-- Beshinchi qator -->
-      <div class="row d-flex justify-content-center margin__top gx-5">
-        <div class="col-12 w-100 display-6 fw-bold d-flex justify-content-around mt-5">
-          Qurilish sohasi
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Construction Plan.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Yerdan foydalanishni 
-            rejalashtirish va rayonlashtirish</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Grand Master Key.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Qurilish loyihalari uchun 
-            mos joylarni tanlash va baholash</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Enterprise Resource Planning.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Infratuzilmani 
-            rejalashtirish</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Mortgage.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Ko'chmas mulk 
-            bozori tahlili</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Flood Car.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Suv toshqinini xaritalash 
-            va xavfni baholash</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Layers.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">BIM+3DGAT 
-            xizmati</h4>
-        </div>
-      </div>
-      <!-- Oltinchi qator -->
-      <div class="row d-flex justify-content-center margin__top margin-bottom gx-5">
-        <div class="col-12 w-100 display-6 fw-bold d-flex justify-content-around mt-5">
-          Sun'iy intellekt
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Google Earth.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">GIS ML asosida 
-            jinoyatlarni tahlil qilish</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Mortgage.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Infratuzilma ta'sirida 
-            uy-joy narxlarini baholash</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Road.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Ob'ektni aniqlash: 
-            ta’mirtalab yo'llar</h4>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/KeyDB.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">AI + AR 
-            maʼlumot toʻplash</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Waypoint Map.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">AI uchun fazoviy tahlil: 
-            geografik chegara asosidagi 
-            yo'l harakati buzilishi monitori</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/AI File.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">AI uchun fazoviy 
-            vizualizatsiya: Yo`l harakati 
-            monitoringi vizualizatsiyasi</h4>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-10 d-flex gx-4  flex-column align-items-center margin__top">
-          <img src="img/Image File.png" class="img-fluid" alt="Morto">
-          <h4 class="fw-bold text-center mt-3">Shahar boshqaruvi uchun 
-            turli burchaklardan suratga olish 
-            (oblique photography) modeli</h4>
-        </div>
-      </div>
-
+<!-- navbar end -->
+<!-- section -->
+<section class="container ">
+  <div class="row  mt-5 ">
+    <div class="col-11 mt-5">
+      <p class="d-flex justify-content-center sanjay1 display-3">Fairy tail</p>
+      <p class="d-flex justify-content-center sanjay2">Сказочная страна чудес</p>
     </div>
-  </section>
-  <!-- section end -->
-  <!-- section 2 -->
-  <div id="carouselExample" class="carousel slide container-fluid">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/footer-bg.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="img/footer-bg.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="img/footer-bg.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- section 2 end -->
-  <!-- footer -->
-  <footer class="container">
-    <div class="row d-flex justify-content-around">
-      <div class="col-10 col-md-6 col-lg-2">
-        <div class="row-12">
-          <h5 class="col-11">SuperMap GIS</h5>
-          <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Bulutli GIS serveri</a></p>
-          <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Edge GIS serveri</a></p>
-          <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">KOMPYUTER uchun GIS terminali</a></p>
-          <p><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Internet uchun GIS terminali</a></p>
-          <p><a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mobil qurilmalar uchun GIS terminali</a></p>
-        </div>
-      </div>
-      <div class="col-10 col-md-6 col-lg-2">
-        <div class="row-12">
-          <h5 class="col-11">Qo'llab-quvvatlash</h5>
-          <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Yuklab olish va onlayn yordam </a></p>
-          <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Maqolalar </a></p>
-          <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ko'p so'raladigan savollar </a></p>
-          <p><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sinov litsenziyasi </a></p>
-        </div>
-      </div>
-      <div class="col-10 col-md-6 col-lg-2">
-        <div class="row-12">
-          <h5 class="col-11">Voqealar</h5>
-          <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">GTC 2019 </a></p>
-          <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">GIS Contest </a></p>
-          <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">GTC 2018 </a></p>
-          <p><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">GTC 2017 </a></p>
-        </div>
-      </div>
-      <div class="col-10 col-md-6 col-lg-2">
-        <div class="row-12">
-          <h5 class="col-11">Biz haqimizda</h5>
-          <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Kirish</a></p>
-          <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Yangiliklar </a></p>
-          <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Karyera </a></p>
-          <p><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Kontaktlar </a></p>
-          <p><a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Maslahatlar </a></p>
-        </div>
-      </div>
-      <div class="col-10 col-md-6 col-lg-2 d-flex ">
-        <div class="col-2 me-5">
-          <div class="row-12 d-flex flex-column ">
-            <i class="fa-brands fa-invision fs-1"></i>
-            <i class="fa-brands fa-twitter my-5 fs-1"></i>
-            <i class="fa-brands fa-youtube fs-1"></i>
+    <div class="card mb-3 mt-5 border-0" style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col-11 col-xl-7">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active">
+                <img src="img/section1.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/section2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/section3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <div class="col-10 col-md-6 col-lg-2">
-          <div class="row-12 d-flex flex-column">
-            <i class="fa-brands fa-facebook fs-1"></i>
-            <i class="fa-brands fa-instagram my-5 fs-1"></i>
-            <i class="fa-solid fa-message fs-1"></i>
+        <div class="col-11 col-xl-5">
+          <div class="card-body d-flex justify-content-center flex-column">
+            
+            <p class="card-text h-5">Каппадокия - сказочная страна воздушных шаров, сырных домиков, разноцветных долин и волшебных рассветов! <br>
+              Сюда приезжают, чтобы увидеть природные чудеса, полетать на воздушном шаре и конечно же сделать миллион красивых фотографий! </p>
+              
+            <p class=" h-5">Участников тура ждёт профессиональная фотосессия от лучших фотографов Каппадокии! <br>
+              Ведь именно за волшебными фото на рассвете на фоне воздушных шаров сюда приезжают люди со всего мира! 
+              </p>
+              
+              <h4>Также Вы увидите:</h4>
+              
+              <p class=" h-5">Музей на открытом воздухе в Гёреме
+                Ущелье Ыхлара и монастырь Селиме
+                Подземные города<br>
+                Крепость Учхисар <br>
+                Зельве и Пашабаг</p>
+                <p class=" h-5">и многие другие достпримечательности.</p>
+                <br>
+                <p class=" h-5">Местная кухня — один из поводов посетить Каппадокию, здесь есть рестораны на любой бюджет.</p>
+            
           </div>
         </div>
       </div>
     </div>
-  </footer>
-  <!-- footer end -->
+  </div>
+</section>
+<!-- section end -->
+<!-- section 2 -->
+<section class="container">
+  <div class="card mb-3 mt-5 border-0" style="max-width: 100%;">
+    <div class="row mt-5 g-0">
+      <div class="col-11 col-xl-7 order-2">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active">
+              <img src="img/silide2_1.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/cilide2-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/cilide2-3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-11 col-xl-5 order-1 d-flex">
+        <div class="card-body d-flex justify-content-around flex-column pe-5 me-5 w-75">
+          <div class="col-11 d-flex">
+            <p class="d-flex justify-content-center sanjay1 display-3">Our trip</p>
+            <p class="d-flex justify-content-center sanjay3">Маршрут</p>
+          </div>
+          <h4 class="mt-5">День 1 </h4>
+          <p class="card-text h-5 ">Прилёт в Анкару 
+            Трансфер в Каппадокию 
+            Солёное озеро
+            Приезд в Гёреме 
+            Ужин
+             </p>
+            <br>
+            <h4>День 2 </h4>
+            
+            <p class=" h-5">Фотосессия
+              Завтрак в отеле 
+              Дневной тур по Каппадокии 
+              Закат с панорамным видом
+              </p>
+              <br>
+              <h4>День 3 </h4>
+              <br>
+              <p class=" h-5">Полёт на воздушном шаре
+                Завтрак в отеле 
+                Экскурсии на выбор 
+                </p>
+              <br>
+              <h4>День 4 </h4>
+              <p class=" h-5">Свободное время, шоппинг
+                Трансфер в Анкару
+                Вылет в Киев</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section 2 end -->
+<!-- section 3 -->
+<div class="container">
+  <div class="row margin-top-10 d-flex justify-content-around justify-content-xl-start">
+    <!-- 1-qator -->
+    <div class="col-12 d-flex justify-content-center justify-content-xl-start">
+      <div class="hotel d-flex mb-5">
+        <p class="display-3 sanjay1">Hotel</p>
+      <p class="mt-5"> <em>Sultan Cave Suites</em></p>
+      </div>
+    </div>
+    <div class="col-11 col-xl-6 d-flex justify-content-center justify-content-xl-start">
+      <img src="img/hotel 1.jpg" alt="hotel" class="img-fluid">
+    </div>
+    <!-- 2-qator -->
+    <div class="col-xl-6 col-11 d-flex flex-column justify-content-around">
+      <div class="hotel-text">
+        <p class="qator-3">В этом уникальном отеле, расположенном на вершине холма Айдынлы, вы можете забронировать высеченные в скале номера, обставленные антикварной мебелью со всей Турции. С солнечной террасы отеля открывается прекрасный панорамный вид на Национальный парк Гереме.</p>
+        <p class="qator-3">Большинство номеров отеля Sultan Cave Suites высечены в скале, что обеспечивает прохладу и покой. Все номера оборудованы гостиной зоной и современной ванной комнатой. В большинстве из них есть собственная терраса или балкон.</p>
+        <p class="qator-3">Отель Cave Suites Sultan располагает изысканным рестораном, где подают фирменные блюда региона Каппадокии. После ужина, пройдя на террасу, вы сможете заказать напиток и полюбоваться закатом солнца над деревней.</p>
+      </div>
+      <div class="row h-50 row-gap-5 pt-3">
+        <div class="col-6 ">
+          <img class="img-fluid" src="img/hotel 2.png" alt="hoterl">
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="img/hotel 3.png" alt="hoterl">
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="img/hotel4.png" alt="hoterl">
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="img/hotel 5.png" alt="hoterl">
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- section 3 end -->
+<!-- section 4 -->
+<section class="container">
+  <div class="row d-flex justify-content-around">
+    <!-- mane name -->
+    <div class="col-12 mt-5">
+      <div class="hotel d-flex mt-5">
+        <p class="display-3 sanjay1">Price</p>
+        <p class="mt-5"> <em>Стоимость услуг</em></p>
+      </div>
+    </div>
+    <!-- 1-ustun -->
+    <div class="col-lg-5 col-11 order-2 order-lg-1 d-flex flex-column mt-5">
+      <div class="price-text">
+        <p class="h-3 fw-bold">Включено</p>
+      <p class="qator-2">Проживание в двухместном номере в отеле с завтраками</p>
+      <p class="qator-2">Индивидуальный трансфер для нашей группы из Анкары и обратно</p>
+      <p class="qator-2">Экскурсия на Солёное озеро</p>
+      <p class="qator-2">Индивидуальная дневная экскурсия по лучшим местам Каппадокии с личным транспортом</p>
+      <p class="qator-2">Фотосессия с профессиональным фотографом для каждой участницы
+        (Несколько локаций, 5 лучших фото в обработке фотографа и весь материал (до 100 фотографий)</p>
+      </div>
+      <!-- narhi va sanasi -->
+      <div class="price-date d-flex flex-column justify-content-around  margin-top-30">
+        <div class="hotel d-flex justify-content-end mt-5">
+          <p class="display-3 sanjay1">1.07.2024</p>
+          <p class="mt-5"> <em>Ближайшая дата тура </em></p>
+        </div>
+        <div class="hotel d-flex justify-content-end">
+          <p class="display-3 sanjay1">490$</p>
+          <p class="mt-5"> <em>Стоимость</em></p>
+        </div>
+      </div>
+      <!-- registiratsiya -->
+      <p class="fw-bold margin-top-10">Оставить заявку или задать вопрос</p>
+      <input class="form-control border  border-warning form-control-lg mt-5 " type="text" placeholder="Имя" aria-label=".form-control-lg example">
+      <input class="form-control border  border-warning my-5 " type="tel" placeholder="Телефон" aria-label="default input example">
+      <div class="button-1 w-100 d-flex justify-content-center">
+        <button type="button " class="btn btn-outline-warning w-50">ОСТАВИТЬ ЗАЯВКУ</button>
+      </div>
 
+    </div>
+      <!-- 2-ustun -->
+    <div class="col-lg-5 havo col-11 order-1 order-lg-2 mt-5">
+      <p class="fw-bold  mb-3">Не включено</p>
+      <p>Авиа Киев-Анкара-Киев (140-170$)</p>
+      <p>Обеды и ужины (150$ на поездку)</p>
+      <p>Воздушный шар 200$</p>
+      <p>Дополнительные экскурсии (по желанию) от 30$</p>
+      <img src="img/prise 1.png" alt="narx" class="img-fluid price-img margin-top-40">
+      <div class="havo1"><img src="img/havo shari.png" alt="аа"></div>
+      <div class="havo2"><img src="img/havo shari.png" alt="аа"></div>
+      <div class="havo3"><img src="img/havo shari.png" alt="аа"></div>
+    </div>
+  </div>
+</section>
+<!-- section 4 end -->
+<!-- footer -->
+<footer class="footer">
+ <div class="container">
+  <div class="row align-self-center d-flex justify-content-around">
+    <div class="col-11 col-xl-4 nano">
+      <p class="sanjay1 display-4 mt-5 d-flex justify-content-center">Contacts</p>
+      <p class="justify-content-center d-flex"><i class="fa-solid fa-phone me-2 mt-1 h5 text-warning"></i>+998902922196</p>
+      <p class="justify-content-center d-flex"><i class="fa-solid fa-envelope  mt-1 me-2 h5 text-warning"></i>сappadocia.tours@gmail.com</p>
+      <p class="d-flex justify-content-center"><i class="fa-brands fa-youtube text-warning h1"></i><i class="fa-brands fa-facebook text-warning h1 mx-5"></i><i class="fa-brands fa-instagram text-warning h1"></i></p>
+    </div>
+    <div class="col-11 col-xl-5 align-self-center d-flex justify-content-center">
+      <p class="sanjay1 display-3 text-black">Dreams come true</p>
+    </div>
+  </div>
+ </div>
+</footer>
+<!-- footer end -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

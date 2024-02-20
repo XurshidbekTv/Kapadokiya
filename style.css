@@ -1,33 +1,210 @@
-   /* header */
-   .header__nav{
-        height: 600px;
-        margin-top: 60px;
-        background: url(img/header-bg.png);
-        background-position:center;
-        position: relative;
-        display: flex;
+.navbar-nav{
+    width: 100%;
+    min-height: 1080px;
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+}
+.navbar-text{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+}
+.navbar-text div:nth-child(1){
+    font-family: 'ballet';
+    font-size: 1650%;
+}
+.navbar-text div:nth-child(2){
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 400%;
+  
+}
+.center{
+    margin: 0 auto;
+}
+.sanjay1{
+    font-family: 'ballet';
+    color: #E2AB3F;
+}
+.sanjay2{
+    font-family: 'roboto';
+    margin-left: 17%;
+    margin-top: -3%;
+}
+.sanjay3{
+    font-size: 'roboto';
+    margin-left: -1%;
+    margin-top: 12%;
+}
+.sanjay4{
+    font-size: 'roboto';
+    margin-left: 9%;
+    margin-top: -3%;
+}
+.rasim{
+    max-width: 280px;
+    max-height: 150px;
+    object-fit: cover;
+}
+.sanjay5{
+    margin-top: -7%;
+    margin-left: 10%;
+}
+.pastga{
+    width: 100%;
+    height: 100%;
+    margin-top: 21%;
+}
+
+.katta-shar{
+    display: flex;
+    position: relative;
+    padding-top: 12%;
+}
+.havo-shar{
+    position: absolute;
+    top: 0;
+    left: 33%;
+    font-size: 18px;
+}
+
+.hotel-1{
+   
+}
+
+.margin-top-10{
+    margin-top:10% ;
+} 
+.margin-top-30{
+    margin-top: 30%;
+}
+.margin-top-40{
+    margin-top: 40%;
+}
+.qator-3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical ;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.qator-2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical ;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.havo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.havo1{
+    display: flex;
+    position: absolute;
+    width: 17%;
+    height: 17%;
+    top: 0;
+    left: 40%;
+    transform: translateY(-60%);
+    transition: 0.3s;
+    z-index: -1;
+}
+.havo:hover .havo1{
+    transform: rotate(360deg);
+}
+.havo2{
+    display: flex;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 5%;
+    left: 70%;  
+    z-index: -1;
+}
+.havo3{
+    display: flex;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 20%;
+    left: 76%;  
+    z-index: -1;
+}
+.footer{
+  background:url(img/footer-img.jpg);
+  background-position:center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin-top: 15%;
+  display: flex;
+}
+.footer-nav{
+    width: 100%;
+    height: 100%;
+}
+.footer-text{
+    margin-top: 20%;
+    margin-left: 60%;
+    color:rgb(116, 49, 49);
+}
+.nano{
+    margin-top: 10%;
+    max-width: 360px;
+    height: 530px;
+    background:url('img/kisspng-flight-hot-air-balloon-computer-icons-aerostat-5afe08ad4b2f92\ 2.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+
+
+
+
+
+
+@media(max-width: 1400px){
+    
+    .price-img{
+        margin-top: 60%;
     }
-    .header__nav::after{
-        position:absolute;
-        content:'';
-        display: flex;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0%;
-        background:#24282C;
-        opacity: 40%;
+            
+}
+
+@media(max-width: 1200px){
+    .navbar-text div:nth-child(1){
+        font-size: 1050%;
+    }   
+    .navbar-text div:nth-child(2){
+        font-size: 200%;
     }
-  /* header end */
-  .margin__top{
-    margin-top:  86px;
-  }
-  .margin-bottom{   
-    margin-bottom: 136px;
-  }
-  .carousel{
-    min-height: 500px;
-  }
-.container-fluid{
-  margin-left: 0!important;
+    .price-img{
+        margin-top: 80%;
+    }
+            
+}
+@media(max-width: 992.98px){
+   
+    .price-img{
+        margin-top: 20%;
+    }
+            
+}
+@media(max-width: 765px){
+    .navbar-text div:nth-child(1){
+        font-size: 450%;
+    }   
+    .navbar-text div:nth-child(2){
+        font-size: 100%;
+    }
+            
 }
